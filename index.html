@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotify - Web Player: Music for everyone</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="utility.css" />
+</head>
+
+<body class="bg-black">
+  <div class="container">
+    <header>
+      <div class="navbar bg-black">
+        <div class="logo invert"><img src="images/logo.svg" alt="logo" /></div>
+
+        <div class="search-container">
+          <div class="home bg-grey">
+            <img class="home-icon invert" src="images/home.svg" alt="home" />
+          </div>
+
+          <div class="search-bar bg-grey">
+            <img class="search-icon bg-grey" src="images/search.svg" alt="search" />
+            <input class="bg-grey" type="text" placeholder="What do you want to play?" />
+            <img class="browse-icon bg-grey" src="images/browse.svg" alt="browse" />
+          </div>
+        </div>
+
+        <div class="auth-buttons">
+          <button class="signup-btn">Sign up</button>
+          <button class="login-btn">Log in</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="left-container radius">
+        <div class="library">
+          <div class="library-icon">
+            <img class="invert" src="images/library.svg" alt="library-icon" />
+          </div>
+          <h3 class="heading">Your Library</h3>
+        </div>
+
+        <div class="songsList">
+          <ul></ul>
+        </div>
+
+        <div class="footer">
+          <div>
+            <a href="https://www.spotify.com/in-en/legal/">
+              <span>Legal</span>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/in-en/safetyandprivacy/">
+              <span>Safety & Privacy Center</span>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/in-en/legal/privacy-policy/">
+              <span>Privacy Policy</span>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/in-en/legal/cookies-policy/">
+              <span>Cookies</span>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">
+              <span>About Ads</span>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/in-en/accessibility/">
+              <span>Accessibility</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="right-container radius">
+        <div class="spotifyPlaylists">
+          <h2>Spotify Playlists</h2>
+          <div class="cardContainer">
+            <div data-folder="BestHits" class="card">
+              <div class="play">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 384 512">
+                  <path
+                    d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80L0 432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                </svg>
+              </div>
+              <img src="https://i.scdn.co/image/ab67706f00000002efb6d4aa8af6840df5951432" alt="Card Image" />
+              <p>
+                Hottest tracks from your favourite I-Pop Icons. Cover- Harrdy
+                Sandhu
+              </p>
+            </div>
+
+            <div data-folder="newRelease" class="card">
+              <div class="play">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 384 512">
+                  <path
+                    d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80L0 432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                </svg>
+              </div>
+              <img src="https://i.scdn.co/image/ab67706f00000002efb6d4aa8af6840df5951432" alt="Card Image" />
+              <p>
+                Hottest tracks from your favourite I-Pop Icons. Cover- Harrdy
+                Sandhu
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="playbar">
+          <div class="seekbar">
+            <div class="circle"></div>
+          </div>
+
+          <div class="abovebar">
+            <div class="songinfo"></div>
+            <div class="songbuttons">
+              <img id="previous" class="invert" src="images/previousSong.svg" alt="previousSong" />
+              <img id="play" class="invert" src="images/playSong.svg" alt="playSong" />
+              <img id="next" class="invert" src="images/nextSong.svg" alt="nextSong" />
+            </div>
+            <div class="timevol">
+            <div class="songduration"></div>
+            <div class="volume">
+              <img id="volume" class="invert" src="images/volume.svg" alt="volume">
+              <div class="range">
+                <input type="range" name="volume" id="volumebar">
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>

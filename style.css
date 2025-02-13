@@ -1,0 +1,439 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root{
+  --a:0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+}
+
+.logo {
+  margin-left: 20px;
+}
+
+.logo img {
+  height: 30px;
+  width: auto;
+}
+
+.home {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.home-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  cursor: pointer;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  height: 3rem;
+  width: 30rem;
+  padding: 5px 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #121212;
+  position: relative;
+  cursor: pointer;
+}
+
+.search-bar input[type="text"] {
+  border: none;
+  background: none;
+  outline: none;
+  color: #b3b3b3;
+  padding-left: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  flex: 1;
+}
+
+.search-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: currentColor;
+  color: white;
+}
+
+.browse-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-left: auto;
+}
+
+.auth-buttons > * {
+  margin: 0 12px;
+}
+
+.signup-btn {
+  background-color: transparent;
+  color: gray;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.signup-btn:hover {
+  font-size: 1.01rem;
+  color: white;
+}
+
+.login-btn {
+  background-color: white;
+  color: black;
+  padding: 5px 15px;
+  border: none;
+  height: 2.5rem;
+  width: 6rem;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  font-size: 1.1rem;
+  height: 2.6rem;
+  width: 6.1rem;
+}
+
+main {
+  display: flex;
+}
+
+.left-container {
+  width: 24.5vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #121212;
+}
+
+.library {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+}
+
+.library-icon {
+  width: 1.8rem;
+}
+
+.heading {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.left-container {
+  width: 24.5vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #121212;
+  padding: 8px;
+  margin-left: 3px;
+}
+
+.library {
+  display: flex;
+  align-items: center;
+  padding:  12px;
+  gap: 10px;
+}
+
+.library-icon {
+  width: 1.8rem;
+}
+
+.heading {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.footer {
+  margin-top: auto;
+  padding: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+}
+
+.footer a {
+  color: #6a6a6a;
+  text-decoration: none;
+  font-size: 0.7rem;
+  font-weight: 400;
+  transition: color 0.2s;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+.right-container {
+  width: 74.5vw;
+  display: flex;
+  margin-left: auto;
+  margin-top: 0;
+  background-color: #212121;
+  position: relative;
+}
+
+.spotifyPlaylists {
+  padding: 16px;
+}
+
+.cardContainer {
+  margin: 15px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-height: 70vh;
+  overflow-y: scroll;
+}
+
+.card {
+  width: 175px;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.card:hover{
+  background-color: #6b6262;
+  cursor: pointer;
+  --a:1;
+}
+
+.card > * {
+  padding-top: 3px;
+}
+.card img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.card p {
+  font-size: 0.8rem;
+  color: #ababab;
+}
+
+.play {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #3be477;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2px;
+  position: absolute;
+  right: 12px;
+  top: 125px;
+  opacity: var(--a);
+  transition: all .5s ease-out;
+}
+
+
+
+.play svg {
+  width: 20px;
+  height: 20px;
+}
+
+.playbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 5px;
+  background-color: #5b7b7a;
+  padding: 12px;
+  width: 74.5vw;
+  min-height: 40px;
+  border-radius: 10px;
+}
+
+.songinfo {
+  flex: 0 1 300px; /* Don't grow, can shrink, base width 300px */
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.songbuttons {
+  flex: 1; /* Can grow and shrink */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 0 20px;
+}
+
+.songbuttons img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.songsList {
+  height: 650px;
+  overflow: auto;
+  cursor: pointer;
+}
+
+.songduration {
+  flex: 0 1 200px; /* Don't grow, can shrink, base width 200px */
+  color: white;
+  font-size: 0.8rem;
+  text-align: right;
+  padding: 0 16px;
+}
+
+.songsList ul {
+  padding: 5px 12px;
+}
+
+.info {
+  font-size: 0.5rem;
+}
+
+.songsList li {
+  display: flex;
+  align-items: center; /* Vertically center all items */
+  justify-content: space-between; /* Space between song info and play button */
+  padding: 10px;
+  border: 1px solid white;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  width: 315px;
+}
+
+.music-icon {
+  width: 1rem;
+  margin: 0 5px;
+}
+
+.info {
+  flex-grow: 1;
+  margin-left: 10px;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.playNow {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Consistent spacing between text and icon */
+}
+
+.playNow img {
+  width: 20px;
+  height: 20px;
+}
+
+.playNow span {
+  font-size: 0.8rem;
+}
+
+.seekbar {
+  height: 4px;
+  width: 98%;
+  background: white;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 8px;
+  margin: 6px;
+  cursor: pointer;
+}
+
+.circle {
+  width: 13px;
+  height: 13px;
+  border-radius: 13px;
+  background-color: white;
+  position: relative;
+  bottom: 5px;
+  left: 0%;
+  transition: left 0.5s;
+}
+
+.abovebar {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  width: 100%;
+}
+
+
+
+.volume img {
+  width: 20px;
+  height: 20px;
+}
+
+.timevol{
+  display: flex;
+  align-items: center;
+}
+
+.volume{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+#volumebar {
+  cursor: pointer;
+  accent-color: white;
+  outline: none;
+}
+
+
+
+
+
+
+
+
+
+

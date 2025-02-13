@@ -1,0 +1,52 @@
+.flex{
+    display: flex;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.border{
+    border:2px solid red
+}
+
+.bg-black{
+    background-color: #000000;
+    color: white;
+}
+
+.invert{
+    filter: invert(1);
+}
+
+.bg-grey{
+    background-color: #1f1f1f;
+}
+
+.radius{
+    border-radius: .5rem;
+}
+
+/* Custom Dark Scrollbar for Chrome */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e1e; /* Dark background for the scrollbar track */
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #444; /* Dark gray scrollbar thumb */
+    border-radius: 10px; /* Optional: Rounded corners */
+    border: 2px solid #1e1e1e; /* Blending thumb with the track */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Lighter shade on hover */
+}
